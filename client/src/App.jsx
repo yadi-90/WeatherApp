@@ -58,13 +58,14 @@ function App() {
         <h2>{myname}</h2>
       </div>
       <div class="weatherinput">
+        <span>Enter City: </span>
       <input
         type="text"
         placeholder="Enter City"
         value={city}
         onChange={(e) => setCity(e.target.value)}
-      />
-      <button onClick={getWeather}>Get Weather</button></div>
+      /></div>
+      <button onClick={getWeather}>Get Weather</button>
       <div class="container">
       <h2>City: {city}</h2>
       <h2>{weather}</h2>
