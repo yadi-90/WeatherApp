@@ -58,13 +58,13 @@ function App() {
        <p> Weather Wisdom at Your Fingertips</p></div>  
        <nav class="navbar">
         <div class="navitem">
-          </div>
           <ul class="nav-links">
             <li><a href="#">Today</a></li>
             <li><a href="#">This Week</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Radar</a></li>
           </ul>
+          </div>
         </nav> 
       <div class="weatherinput">
         <span>Enter City: </span>

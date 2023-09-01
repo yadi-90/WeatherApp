@@ -34,7 +34,7 @@ header{
   margin-right: 20px;
   list-style: none;
   display: inline-block;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .nav-links a{
   text-decoration: none;
