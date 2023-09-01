@@ -16,7 +16,7 @@ app.get('/api', (req, res) => {
 
 //create an endpoint for the route /myname
 app.get('/api/myname', (req, res) => {
-   const name ={name:"By: Yadira Morales"};
+   const name ={name:"Yadira Morales"};
     res.json(name);
 });
 
