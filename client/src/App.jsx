@@ -55,7 +55,17 @@ function App() {
         <h1 class="title">Climate Compass</h1>
       </header> 
       <div class="description">   
-       <p> Weather Wisdom at Your Fingertips</p></div>   
+       <p> Weather Wisdom at Your Fingertips</p></div>  
+       <nav class="navbar">
+        <div class="navitem">
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Today</a></li>
+            <li><a href="#">This Week</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Radar</a></li>
+          </ul>
+        </nav> 
       <div class="weatherinput">
         <span>Enter City: </span>
       <input

@@ -21,6 +21,31 @@ header{
   font-size: 30px;
   font-weight: bold;
 }
+.navbar{
+  background-color: black;
+  color:white;
+  overflow: hidden;
+}
+.navitem{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav-links li{
+  margin-right: 20px;
+  list-style: none;
+  display: inline-block;
+  justify-content: space-between;
+}
+.nav-links a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease-in;
+}
+
+.nav-links a:hover{
+  color: #6fe675;
+}
 
 .weatherinput{
   margin-top: 40px;
