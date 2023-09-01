@@ -22,7 +22,7 @@ function App() {
       }
       const data = await response.json();
       setCity(data.name);
-      setWeather(data.weather[0].main);
+      setWeather(data.weather[0].description);
       setTemp(Math.round(data.main.temp - 273.15) * 9/5 + 32);
       setTemp_min(Math.round(data.main.temp_min -273.15) * 9/5 + 32);
       setTemp_max(Math.round(data.main.temp_max - 273.15) * 9/5 + 32);
@@ -51,23 +51,28 @@ function App() {
 
   return (
     <div>
-      <h1 className="title">Weather App</h1>
-      <h2>{myname}</h2>
+      <header>
+        <h1 class="title">Weather App</h1>
+      </header>
+      <div>
+        <h2>{myname}</h2>
+      </div>
+      <div class="weatherinput">
       <input
         type="text"
         placeholder="Enter City"
         value={city}
         onChange={(e) => setCity(e.target.value)}
       />
-      <button onClick={getWeather}>Get Weather</button>
+      <button onClick={getWeather}>Get Weather</button></div>
       <div class="container">
       <h2>City: {city}</h2>
       <h2>{weather}</h2>
       <h2>Current Temperature: {temp} F</h2>
-      <h2>Low: {temp_min} C</h2>
-      <h2>High: {temp_max} C</h2>
+      <h2>Low: {temp_min} F</h2>
+      <h2>High: {temp_max} F</h2>
       <h2>Humidity: {humidity}%</h2>
-      <h2>Wind: {wind}</h2>
+      <h2>Wind: {wind} mph</h2>
 </div>
     </div>
   );
