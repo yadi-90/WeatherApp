@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div>
-      <h1 className="title">My Weather App</h1>
+      <h1 className="title">Weather App</h1>
       <h2>{myname}</h2>
       <input
         type="text"
@@ -60,7 +60,7 @@ function App() {
         onChange={(e) => setCity(e.target.value)}
       />
       <button onClick={getWeather}>Get Weather</button>
-      <container>
+      <div class="container">
       <h2>City: {city}</h2>
       <h2>{weather}</h2>
       <h2>Current Temperature: {temp} F</h2>
@@ -68,7 +68,7 @@ function App() {
       <h2>High: {temp_max} C</h2>
       <h2>Humidity: {humidity}%</h2>
       <h2>Wind: {wind}</h2>
-</container>
+</div>
     </div>
   );
 }
