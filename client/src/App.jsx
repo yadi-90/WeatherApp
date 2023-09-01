@@ -50,13 +50,12 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div class="body">
       <header>
-        <h1 class="title">Weather App</h1>
-      </header>
-      <div>
-        <h2>{myname}</h2>
-      </div>
+        <h1 class="title">Climate Compass</h1>
+      </header> 
+      <div class="description">   
+       <p> Weather Wisdom at Your Fingertips</p></div>   
       <div class="weatherinput">
         <span>Enter City: </span>
       <input
@@ -75,6 +74,9 @@ function App() {
       <h2>Humidity: {humidity}%</h2>
       <h2>Wind: {wind} mph</h2>
 </div>
+<footer>
+        <p>Created by: {myname}</p>
+</footer>
     </div>
   );
 }
